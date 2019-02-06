@@ -1,0 +1,47 @@
+.container {
+    display: grid;
+    grid-template-areas:
+            "header aside"
+            "section aside"
+            "section footer";
+    grid-template-columns: 1fr 4fr;
+    grid-auto-rows: 100px;
+    grid-gap: 20px;
+}
+
+header {
+    grid-area: header;
+    border:3px solid blue;
+    background: deepskyblue;
+}
+
+aside{
+    grid-area: aside;
+    border: 3px solid purple;
+    background: mediumpurple;
+}
+
+section{
+    grid-area: section;
+    border: 3px solid teal;
+    background: slategrey;
+}
+
+footer {
+    grid-area: footer;
+    border: 3px solid green;
+    background: darkseagreen;
+}
+
+html, body{
+    height: 90%;
+}
+
+.bluebackground
+{
+    background:blue;
+}
+.redbackground
+{
+    background:red;
+}
